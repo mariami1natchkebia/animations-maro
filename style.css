@@ -6,8 +6,6 @@
 body {
     background-color: #0F0F0F;
     font-family: "Roboto Mono", monospace;
-    /* margin-left: 160px;
-    margin-right: 160px; */
 }
 
 nav {
@@ -17,6 +15,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px dashed #464646;
+    
+}
+.header-menu {
     margin-left: 160px;
     margin-right: 160px;
 }
@@ -38,6 +39,12 @@ nav {
     display: flex;
     gap: 15px;
 }
+
+.buttons :hover {
+    background-color: #AE9B84;
+    transition: 1s;
+}
+
 
 .buttons a {
     color: rgb(255, 255, 255);
@@ -68,6 +75,11 @@ nav {
     gap: 15px;
 }
 
+.buttons2 :hover {
+    background-color: #AE9B84;
+    transition: 1s;
+}
+
 .buttons2 a {
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -96,7 +108,7 @@ nav {
 .hero-content {
     margin-top: 20px;
     border: 2px dashed #464646;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left: 160px;
     margin-right: 160px;
 }
@@ -209,7 +221,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 80px 40px 40px 40px;
+    /* padding: 80px 0 0 80px; */
     background-color: #0F0F0F;
 }
 
@@ -220,6 +232,9 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    padding-left: 10px;
 }
 
 .data {
@@ -228,13 +243,20 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 0 50px;
+    /* padding: 0 50px; */
+    border-left: 2px dashed #464646;
+    border-top: 2px dashed #464646;
+    
+
 }
 
-.info {
-    padding: 30px;
+.infos {
+    /* padding: 30px; */
     display: flex;
     flex-direction: column;
+    border-bottom: 2px dashed #7d7d7d;
+    border-right: 2px dashed #7d7d7d;
+    margin:40px;
 }
 
 .number {
@@ -378,8 +400,9 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
-    width: 100%;
     gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .top-button {
@@ -402,7 +425,7 @@ nav {
     text-decoration: none;
 }
 
-.shopnow :hover {
+.shopnow:hover {
     background-color: #AE9B84;
     transition: 1s;
 }
@@ -418,6 +441,11 @@ nav {
     border-radius: 100px;
     font-size: 18px;
     text-decoration: none;
+}
+
+.womenswear:hover {
+    background-color: #AE9B84;
+    transition: 1s;
 }
 
 .bottom-info {
@@ -480,10 +508,13 @@ nav {
     color: #81807E;
 }
 
-
+.questions:hover {
+    color: #7d6f5d;
+    transition: 2s;
+}
 
 .links {
-    height: 300px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     padding: 160px;
@@ -491,8 +522,6 @@ nav {
     border-top: 2px dashed #464646;
     border-bottom: 2px dashed #464646;
     margin-top:10px;
-    
-    
 }
 
 .social {
@@ -510,9 +539,26 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* animation: ; */
+    animation: moveVertical 2s linear infinite;
 
 }
+@keyframes moveVertical {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-15px); 
+    }
+    50% {
+        transform: translateY(0); 
+    }
+    75% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}    
 
 .bottom-nav { 
     display: flex;
@@ -575,6 +621,7 @@ nav {
     color: #464646;
     font-size: 14px;
     border-top: 2px dashed #464646;
+    padding: 0 160px;
     }
 
 .terms-privacy {
@@ -594,5 +641,4 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    /* justify-content: space-around; */
 }
