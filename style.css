@@ -105,6 +105,11 @@ nav {
     border-radius: 10px;
 }
 
+.contact:hover {
+    background-color: #81807E;
+    transition: 1s;
+}
+
 .hero-content {
     margin-top: 20px;
     border: 2px dashed #464646;
@@ -336,8 +341,6 @@ nav {
     font-size: 24px;
 }
 
-
-
 .explore p {
     color: #676665;
     font-size: 18px;
@@ -378,7 +381,6 @@ nav {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 30px;
     border-bottom: 2px dashed #464646;
     border-right: 2px dashed #464646;
@@ -401,7 +403,6 @@ nav {
     justify-content: space-between;
     padding: 30px 0;
     gap: 10px;
-    display: flex;
     flex-direction: column;
 }
 
@@ -472,7 +473,7 @@ nav {
 
 .categories-shipping {
     width: auto;
-    height: 63p;
+    height: 63px;
     border: none;
     border-radius: 10px;
     padding: 10px;
@@ -480,7 +481,7 @@ nav {
 }
 .categories-ordering {
     width: auto;
-    height: 63p;
+    height: 63px;
     border: 2px dashed #464646;
     border-radius: 10px;
     padding: 10px;
@@ -585,8 +586,14 @@ nav {
     font-size: 18px;
     color: #464646;
     text-decoration: none;
+    transition: 1s; 
 }
 
+.bottom-nav a:hover {
+    color: #ffffff; 
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
 
 .input-mail {
     display: flex;
